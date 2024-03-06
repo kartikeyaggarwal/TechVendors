@@ -1,0 +1,54 @@
+name: Run Go code and save vendors
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at midnight UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.21.1'
+
+      - name: Run Go code and save vendors
+        run: |
+          go run main.go | sort -u | tee vendors_new.txt
+
+      - name: Check for changes in vendors.txt
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain vendors_new.txt)" ]; then
+            echo "::set-output name=changed::true"
+          else
+            echo "::set-output name=changed::false"
+          fi
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout main
+          mv vendors_new.txt vendors.txt
+          git add vendors.txt
+          git commit -m "Update vendors.txt"
+
+      - name: Push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
