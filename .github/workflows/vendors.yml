@@ -25,29 +25,17 @@ jobs:
 
       - name: Run Go code and save vendors
         run: |
-          go run main.go | sort -u | tee vendors_new.txt
-
-      - name: Check for changes in vendors.txt
-        id: check_changes
-        run: |
-          if [ -n "$(git status --porcelain vendors_new.txt)" ]; then
-            echo "::set-output name=changed::true"
-          else
-            echo "::set-output name=changed::false"
-          fi
+          go run main.go > vendors.txt
 
       - name: Commit changes
-        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout main
-          mv vendors_new.txt vendors.txt
           git add vendors.txt
           git commit -m "Update vendors.txt"
 
       - name: Push changes
-        if: steps.check_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
