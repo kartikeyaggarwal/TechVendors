@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Go code and save vendors
         run: |
-          go run main.go > vendors.txt
+          go run main.go | sort -u > vendors.txt
 
       - name: Commit changes
         run: |
