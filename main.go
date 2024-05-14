@@ -19,7 +19,7 @@ func main() {
 			for _, vendors := range edge.Node.Vendors {
 				// output := edge.Node.Cve_id + "," + fmt.Sprintf("%d", edge.Node.Reports_submitted_count) + "," + products
 				fmt.Println(vendors)
-				if edge.Node.Reports_submitted_count < 2 {
+				if edge.Node.Reports_submitted_count < 20 {
 					return
 				}
 
