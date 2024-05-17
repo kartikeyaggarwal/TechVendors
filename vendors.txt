@@ -109,7 +109,6 @@ panic
 paramiko
 percussion
 phpmyadmin
-plesk
 polarssl
 primetek
 proftpd
