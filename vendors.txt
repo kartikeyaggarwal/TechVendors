@@ -17,6 +17,7 @@ broadcom
 ca
 caddyserver
 canonical
+checkpoint
 cisco
 citrix
 cloudfoundry
