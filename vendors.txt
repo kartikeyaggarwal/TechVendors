@@ -6,6 +6,7 @@ akka
 apache
 apple
 arkextensions
+arubanetworks
 asyncssh_project
 atlassian
 backdropcms
@@ -73,6 +74,7 @@ kitty_project
 krpano
 kubernetes
 lancom-systems
+lenovo
 libreoffice
 libssh
 libssh2
