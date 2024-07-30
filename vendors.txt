@@ -154,6 +154,7 @@ thorntech
 tinyssh
 trilead
 vandyke
+vercel
 vmware
 winscp
 wordpress
