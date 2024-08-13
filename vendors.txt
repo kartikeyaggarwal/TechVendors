@@ -46,6 +46,8 @@ freebsd
 fujitsu
 fusion_builder_project
 gentoo
+geoserver
+geotools
 getbootstrap
 gnu
 golang
