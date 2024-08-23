@@ -69,6 +69,7 @@ jenkins
 jolokia
 joomla
 jquery
+jqueryform
 jqueryui
 juniper
 kitty_project
