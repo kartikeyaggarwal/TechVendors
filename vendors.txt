@@ -82,6 +82,7 @@ libssh
 libssh2
 libtirpc_project
 liferay
+lsoft
 mageia
 mariadb
 matez
