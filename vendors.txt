@@ -86,6 +86,7 @@ liferay
 mageia
 mariadb
 matez
+microfocus
 microsoft
 mitel
 mobileiron
