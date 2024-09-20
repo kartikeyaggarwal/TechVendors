@@ -5,6 +5,7 @@ adobe
 akka
 apache
 apple
+argoproj
 arkextensions
 arubanetworks
 asyncssh_project
@@ -83,6 +84,7 @@ libssh
 libssh2
 libtirpc_project
 liferay
+lsoft
 mageia
 mariadb
 matez
