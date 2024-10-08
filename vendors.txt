@@ -3,7 +3,6 @@
 acf_to_rest_api_project
 adobe
 akka
-angularjs
 apache
 apple
 argoproj
