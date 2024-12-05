@@ -4,7 +4,6 @@ acf_to_rest_api_project
 adobe
 akka
 amazon
-angularjs
 apache
 apple
 argoproj
@@ -86,6 +85,7 @@ libssh
 libssh2
 libtirpc_project
 liferay
+lsoft
 mageia
 mariadb
 matez
