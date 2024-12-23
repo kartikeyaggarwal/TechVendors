@@ -1,9 +1,11 @@
 10web
 9bis
 acf_to_rest_api_project
+adminer
 adobe
 akka
 amazon
+angularjs
 apache
 apple
 argoproj
