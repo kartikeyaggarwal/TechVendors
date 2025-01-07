@@ -5,7 +5,6 @@ adminer
 adobe
 akka
 amazon
-angularjs
 apache
 apple
 argoproj
