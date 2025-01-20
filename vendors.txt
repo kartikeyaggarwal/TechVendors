@@ -5,7 +5,6 @@ adminer
 adobe
 akka
 amazon
-angularjs
 apache
 apple
 argoproj
@@ -86,6 +85,7 @@ libssh
 libssh2
 libtirpc_project
 liferay
+lsoft
 mageia
 mariadb
 matez
