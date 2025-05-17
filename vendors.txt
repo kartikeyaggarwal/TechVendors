@@ -134,6 +134,7 @@ redhat
 redux
 ricon
 rocklobster
+rockwellautomation
 roumenpetrov
 rpcbind_project
 rubyonrails
