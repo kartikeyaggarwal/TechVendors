@@ -75,6 +75,7 @@ joomla
 jquery
 jqueryform
 jqueryui
+jqueryvalidation
 juniper
 kitty_project
 krpano
@@ -132,6 +133,7 @@ putty
 python
 redhat
 redux
+resf
 ricon
 rocklobster
 rockwellautomation
