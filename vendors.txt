@@ -75,7 +75,6 @@ joomla
 jquery
 jqueryform
 jqueryui
-jqueryvalidation
 juniper
 kitty_project
 krpano
