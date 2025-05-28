@@ -75,7 +75,6 @@ joomla
 jquery
 jqueryform
 jqueryui
-jqueryvalidation
 juniper
 kitty_project
 krpano
@@ -87,6 +86,7 @@ libssh
 libssh2
 libtirpc_project
 liferay
+lsoft
 mageia
 mariadb
 matez
