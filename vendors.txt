@@ -42,7 +42,6 @@ elementor
 emlog
 erlang
 f5
-facade
 fedoraproject
 filezilla-project
 forgerock
@@ -76,6 +75,7 @@ joomla
 jquery
 jqueryform
 jqueryui
+jqueryvalidation
 juniper
 kitty_project
 krpano
