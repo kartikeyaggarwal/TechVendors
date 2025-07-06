@@ -42,7 +42,6 @@ elementor
 emlog
 erlang
 f5
-facade
 fedoraproject
 filezilla-project
 forgerock
